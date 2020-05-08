@@ -2,14 +2,13 @@ body {
   text-align: center;
   margin: 0px;
   padding: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
 .clearfix {
   clear: both;
   float: none;
 }
-
 #header {
   height: 120px;
   width: 100%;
@@ -17,48 +16,30 @@ body {
   border-bottom: 1px solid #ccc;
   border-top: 3px solid #61dadb;
 }
-
 .center {
   width: 75%;
   margin: 0px auto;
 }
-
 #logo {
   width: 20%;
   font-size: 30px;
   float: left;
   margin: 35px;
 }
-
 #logo img {
   display: block;
   float: left;
   width: 30%;
   /* margin-right: -10px; */
   margin-top: -1px;
-  -webkit-animation: girar infinite 30s linear;
-          animation: girar infinite 30s linear;
+  animation: girar infinite 30s linear;
 }
-
-@-webkit-keyframes girar {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes girar {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -69,20 +50,17 @@ body {
   float: left;
   font-size: 15px;
 }
-
 #menu {
   width: 70%;
   float: right;
   font-size: 19px;
   /* display: flex; */
 }
-
 #menu ul {
   line-height: 85px;
   width: 60%;
   float: right;
 }
-
 #menu ul li {
   list-style: none;
   height: 46px;
@@ -90,11 +68,9 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
-
 #menu a {
   text-decoration: none;
   color: #444;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
@@ -108,8 +84,13 @@ body {
   /* line-height: 320px; */
   color: white;
   text-shadow: 0 0 5px #444;
-  background: #100896;
-  background: radial-gradient(circle, #100896 0%, #3636d6 35%, #00d4ff 100%);
+  background: rgb(16, 8, 150);
+  background: radial-gradient(
+    circle,
+    rgba(16, 8, 150, 1) 0%,
+    rgba(54, 54, 214, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 #slider h1 {
@@ -120,7 +101,7 @@ body {
 
 .btn-white {
   display: block;
-  color: #585858;
+  color: rgb(88, 88, 88);
   background-color: white;
   padding: 10px;
   width: 100px;
@@ -130,13 +111,10 @@ body {
   text-decoration: none;
   text-shadow: none;
   line-height: 35px;
-  -webkit-box-shadow: 35px;
-          box-shadow: 35px;
-  -webkit-box-shadow: 0 0 5px #ccc;
-          box-shadow: 0 0 5px #ccc;
+  box-shadow: 35px;
+  box-shadow: 0 0 5px #ccc;
   margin-top: 50px;
   border-radius: 4px;
-  -webkit-transition: 0.3s background;
   transition: 0.3s background;
 }
 
@@ -159,6 +137,7 @@ body {
   float: left;
   /* border: 1px solid red; */
   min-height: 450px;
+
   margin-right: 25px;
 }
 
@@ -172,13 +151,12 @@ body {
   background-color: #f7f7f7;
   padding: 20px;
   margin-top: 30px;
-}
-
-.sidebat-item h3 {
-  text-transform: uppercase;
-  font-size: 18px;
-  margin: 0;
-  border-bottom: 3px solid #aaa;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    border-bottom: 3px solid #aaa;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
 }
