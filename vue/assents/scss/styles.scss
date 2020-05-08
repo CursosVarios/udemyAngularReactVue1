@@ -1,4 +1,4 @@
-$colorBase: rgb(199, 14, 14);
+$colorBase: rgb(4, 168, 39);
 body {
   text-align: center;
   margin: 0px;
@@ -93,16 +93,12 @@ body {
   color: white;
   text-shadow: 0 0 5px #444;
 
-  background: rgba(248, 80, 50, 1);
+  background: rgba(171, 193, 154, 1);
   background: -moz-radial-gradient(
     center,
     ellipse cover,
-    rgba(248, 80, 50, 1) 0%,
-    rgba(248, 80, 50, 1) 4%,
-    rgba(241, 111, 92, 1) 27%,
-    rgba(246, 41, 12, 1) 86%,
-    rgba(240, 47, 23, 1) 89%,
-    rgba(231, 56, 39, 1) 100%
+    rgba(171, 193, 154, 1) 0%,
+    rgba(9, 170, 49, 1) 100%
   );
   background: -webkit-gradient(
     radial,
@@ -110,53 +106,33 @@ body {
     0px,
     center center,
     100%,
-    color-stop(0%, rgba(248, 80, 50, 1)),
-    color-stop(4%, rgba(248, 80, 50, 1)),
-    color-stop(27%, rgba(241, 111, 92, 1)),
-    color-stop(86%, rgba(246, 41, 12, 1)),
-    color-stop(89%, rgba(240, 47, 23, 1)),
-    color-stop(100%, rgba(231, 56, 39, 1))
+    color-stop(0%, rgba(171, 193, 154, 1)),
+    color-stop(100%, rgba(9, 170, 49, 1))
   );
   background: -webkit-radial-gradient(
     center,
     ellipse cover,
-    rgba(248, 80, 50, 1) 0%,
-    rgba(248, 80, 50, 1) 4%,
-    rgba(241, 111, 92, 1) 27%,
-    rgba(246, 41, 12, 1) 86%,
-    rgba(240, 47, 23, 1) 89%,
-    rgba(231, 56, 39, 1) 100%
+    rgba(171, 193, 154, 1) 0%,
+    rgba(9, 170, 49, 1) 100%
   );
   background: -o-radial-gradient(
     center,
     ellipse cover,
-    rgba(248, 80, 50, 1) 0%,
-    rgba(248, 80, 50, 1) 4%,
-    rgba(241, 111, 92, 1) 27%,
-    rgba(246, 41, 12, 1) 86%,
-    rgba(240, 47, 23, 1) 89%,
-    rgba(231, 56, 39, 1) 100%
+    rgba(171, 193, 154, 1) 0%,
+    rgba(9, 170, 49, 1) 100%
   );
   background: -ms-radial-gradient(
     center,
     ellipse cover,
-    rgba(248, 80, 50, 1) 0%,
-    rgba(248, 80, 50, 1) 4%,
-    rgba(241, 111, 92, 1) 27%,
-    rgba(246, 41, 12, 1) 86%,
-    rgba(240, 47, 23, 1) 89%,
-    rgba(231, 56, 39, 1) 100%
+    rgba(171, 193, 154, 1) 0%,
+    rgba(9, 170, 49, 1) 100%
   );
   background: radial-gradient(
     ellipse at center,
-    rgba(248, 80, 50, 1) 0%,
-    rgba(248, 80, 50, 1) 4%,
-    rgba(241, 111, 92, 1) 27%,
-    rgba(246, 41, 12, 1) 86%,
-    rgba(240, 47, 23, 1) 89%,
-    rgba(231, 56, 39, 1) 100%
+    rgba(171, 193, 154, 1) 0%,
+    rgba(9, 170, 49, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abc19a', endColorstr='#09aa31', GradientType=1 );
 }
 
 #slider h1 {
