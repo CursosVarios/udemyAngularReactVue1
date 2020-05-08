@@ -1,3 +1,4 @@
+$colorBase: rgb(199, 14, 14);
 body {
   text-align: center;
   margin: 0px;
@@ -14,7 +15,7 @@ body {
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #ccc;
-  border-top: 3px solid #61dadb;
+  border-top: 3px solid $colorBase;
 }
 .center {
   width: 75%;
@@ -31,15 +32,22 @@ body {
   float: left;
   width: 30px;
   /* margin-right: -10px; */
-  margin-top: -1px;
-  animation: girar infinite 30s linear;
+  margin-top: -5px;
+  animation: latir infinite 5s linear;
 }
-@keyframes girar {
+@keyframes latir {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.02, 1.02);
+  }
+  60% {
+    transform: scale(0.9, 0.9);
   }
   100% {
-    transform: rotate(360deg);
+    transform: scale(1, 1);
   }
 }
 
@@ -75,7 +83,7 @@ body {
 }
 
 #menu a:hover {
-  color: #3cb2d3;
+  color: $colorBase;
 }
 
 #slider {
@@ -84,13 +92,71 @@ body {
   /* line-height: 320px; */
   color: white;
   text-shadow: 0 0 5px #444;
-  background: rgb(16, 8, 150);
-  background: radial-gradient(
-    circle,
-    rgba(16, 8, 150, 1) 0%,
-    rgba(54, 54, 214, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
+
+  background: rgba(248, 80, 50, 1);
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(248, 80, 50, 1) 0%,
+    rgba(248, 80, 50, 1) 4%,
+    rgba(241, 111, 92, 1) 27%,
+    rgba(246, 41, 12, 1) 86%,
+    rgba(240, 47, 23, 1) 89%,
+    rgba(231, 56, 39, 1) 100%
   );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, rgba(248, 80, 50, 1)),
+    color-stop(4%, rgba(248, 80, 50, 1)),
+    color-stop(27%, rgba(241, 111, 92, 1)),
+    color-stop(86%, rgba(246, 41, 12, 1)),
+    color-stop(89%, rgba(240, 47, 23, 1)),
+    color-stop(100%, rgba(231, 56, 39, 1))
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(248, 80, 50, 1) 0%,
+    rgba(248, 80, 50, 1) 4%,
+    rgba(241, 111, 92, 1) 27%,
+    rgba(246, 41, 12, 1) 86%,
+    rgba(240, 47, 23, 1) 89%,
+    rgba(231, 56, 39, 1) 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(248, 80, 50, 1) 0%,
+    rgba(248, 80, 50, 1) 4%,
+    rgba(241, 111, 92, 1) 27%,
+    rgba(246, 41, 12, 1) 86%,
+    rgba(240, 47, 23, 1) 89%,
+    rgba(231, 56, 39, 1) 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(248, 80, 50, 1) 0%,
+    rgba(248, 80, 50, 1) 4%,
+    rgba(241, 111, 92, 1) 27%,
+    rgba(246, 41, 12, 1) 86%,
+    rgba(240, 47, 23, 1) 89%,
+    rgba(231, 56, 39, 1) 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(248, 80, 50, 1) 0%,
+    rgba(248, 80, 50, 1) 4%,
+    rgba(241, 111, 92, 1) 27%,
+    rgba(246, 41, 12, 1) 86%,
+    rgba(240, 47, 23, 1) 89%,
+    rgba(231, 56, 39, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
 }
 
 #slider h1 {
@@ -120,7 +186,7 @@ body {
 
 .btn-white:hover {
   background-color: #444;
-  color: white;
+  color: $colorBase;
 }
 
 #slider.slider-small {
